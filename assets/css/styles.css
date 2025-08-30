@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Night sky gradient */
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.road{
+   background-image: url(../imgs/bg.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat:repeat-y ;
+    position: absolute;
+}
+.car1{
+    background-image: url(../imgs/car.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 6px;
+    left: 100px;
+    width: 41px;
+    z-index: 1;
+    height: 86px;
+
+}
+.cars {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 22%;
+    width: 40px;
+    height: 82px;
+
+    
+}
+.car2 {
+    background-image: url(../imgs/car2.png);
+}
+
+.car3 {
+    background-image: url(../imgs/pejaro.png);
+    background-size: 34px 72px;
+}
+
+.car4 {
+    background-image: url(../imgs/police.png);
+    background-size: 34px 72px;
+}
+
+.car5 {
+    background-image: url(../imgs/blue.png);
+    background-size: 34px 72px;
+}
+
+
+#score{
+    left: 10px;
+    top: 10px;
+    color: rgb(245, 242, 242);
+    position: absolute;
+    font-size: 20px;
+}
